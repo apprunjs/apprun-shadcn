@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "apprun-site dev",
     "start": "node server.js",
-    "build": "apprun-site build -cr"
+    "build": "cross-env NODE_ENV=production apprun-site build -cr"
   },
   "keywords": [],
   "author": "",
@@ -16,19 +16,21 @@
   "devDependencies": {
     "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/react-slot": "^1.1.0",
-    "@types/react": "^18.3.8",
-    "@types/react-dom": "^18.3.0",
-    "apprun": "^3",
-    "apprun-site": "^1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "apprun": "^3.33.9",
+    "apprun-site": "^1.3.31",
     "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.445.0",
-    "postcss": "^8.4.45",
+    "cross-env": "^7.0.3",
+    "lucide-react": "^0.453.0",
+    "postcss": "^8.4.47",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tailwind-merge": "^2.5.2",
-    "tailwindcss": "^3.4.10",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss": "^3.4.14",
+    "tailwindcss-animate": "^1.0.7",
+    "cssnano": "^7.0.6"
   }
 }
